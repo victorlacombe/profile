@@ -4,18 +4,19 @@ body {
   background: -webkit-linear-gradient(to top, #6500C0, #6500C0);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #8A00FF, #8A00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
   font-family: 'Open Sans', sans-serif;
   color: rgb(120, 120, 120);
   font-weight: 300;
   line-height: 1.5em;
+
+  position: relative;
 }
 
 
 /*------------------------------SIDEBAR ------------------------------*/
 #sidebar {
   position: fixed;
-  width: 150px;
+  width: 100px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -24,14 +25,17 @@ body {
 }
 
 #sidebar li i {
-  font-size: 30px;
-  margin: 20px;
-  padding: 10px;
+    height: 32px;
+    width: 32px;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid grey;
 }
 
 /*------------------------------ PAGE CONTENT ------------------------------*/
 #page-content {
-  margin-left: 250px;
+  margin-left: 200px;
 }
 
 h1, h2, h3 {
@@ -58,7 +62,7 @@ h3 {
 }
 
 .container {
-  width: 700px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -100,16 +104,12 @@ li a:hover {
   text-align: center;
 }
 
-form {
-/*  margin: 50px;
-  padding: 30px;*/
-}
-
 form div {
-  width: 100%;
+  width: 200px;
   padding: 10px;
   display: inline-block;
   margin: 0 auto;
+  font-weight: lighter;
 }
 
 
@@ -164,6 +164,7 @@ ul {
   /*box-shadow: 10px, 10px, 5px, red;*/
 }
 
+
 #movies img {
   width: 80px;
   height: 120px;
@@ -181,13 +182,14 @@ ul {
  @media (max-width: 960px) {
 
   .container {
-    width: 400px;
+    width: 450px;
   }
+
 }
 @media (max-width: 700px) {
 
   .container {
-    width: 300px;
+    width: 350px;
   }
   #page-content {
     margin-left: 100px;
