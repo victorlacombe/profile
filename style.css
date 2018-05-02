@@ -6,14 +6,25 @@ body {
   line-height: 1.5em;
 }
 
+
+/*------------------------------SIDEBAR ------------------------------*/
 #sidebar {
   position: fixed;
-  width: 300px;
+  width: 200px;
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: red;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 2px 1px 2px rgb(200, 200, 200);
 }
+
+#sidebar li i {
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/*------------------------------ PAGE CONTENT ------------------------------*/
 #page-content {
   margin-left: 300px;
 }
@@ -86,8 +97,6 @@ ul {
   font-size: 30px;
   padding: 10px;
 }
-
-
 
 .btn-green {
   background-color: rgb(0, 215, 155);

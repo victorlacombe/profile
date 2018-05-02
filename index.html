@@ -8,10 +8,16 @@
     <title>Profil Page</title>
   </head>
   <body>
-    <div id="sidebar"></div>
+    <div id="sidebar" class="text-center">
+      <ul>
+        <li><a href="#info"><i class="fas fa-info"></i></li></a>
+        <li><a href="#movies"><i class="fas fa-film"></i></li></a>
+        <li><a href="#footer"><i class="fab fa-react"></i></li></a>
+      </ul>
+    </div>
     <div id="page-content">
       <div class="container">
-        <div class="box-white text-center" >
+        <div class="box-white text-center" id="info" >
           <img id="cicle-profil-picture" src="images/profil.png" alt="">
           <h1>Victor Lacombe</h1>
           <h2>FullStack Developer and Growth Hacker</h2>
@@ -57,7 +63,7 @@
             </tr>
           </table>
         </div>
-        <div class="box-white text-center">
+        <div class="box-white text-center" id=footer>
           <h2>About this page</h2>
           <p>This page has been coded during the FullStack program @LeWagon.</p>
           <ul class="list-inline">
