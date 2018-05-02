@@ -1,7 +1,9 @@
 body {
   background-color: rgb(235, 235, 235);
-  background-image: url(https://picsum.photos/1000/2000);
-  background-size: cover;
+  background: #108dc7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-family: 'Open Sans', sans-serif;
   color: rgb(120, 120, 120);
   font-weight: 300;
@@ -17,7 +19,7 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgb(235, 235, 235);
-  box-shadow: 2px 1px 2px rgb(200, 200, 200);
+  box-shadow: 1px 1px 1px rgb(200, 200, 200);
 }
 
 #sidebar li i {
@@ -45,11 +47,13 @@ h1 {
 
 
 h2 {
-  font-size: 18px;
+  font-size: 25px;
+  color : rgb(0, 0, 100, 0.6);
 }
 
 h3 {
   font-size: 16px;
+  color : rgb(20, 20, 20, 0.8);
 }
 
 .container {
@@ -82,9 +86,10 @@ li a:hover {
   box-shadow: 1px 1px 2px rgba(200, 200, 200, 0.6);
 }
 
-#coffee input {
+/*#coffee input {
   display: inline-block;
-}
+}*/
+
 #coffee i {
   color: #EBA340;
   margin-left: 10px;
@@ -94,9 +99,18 @@ li a:hover {
   text-align: center;
 }
 
-form input {
-  display: inline-block;
+form {
+/*  margin: 50px;
+  padding: 30px;*/
 }
+
+form div {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
 
 ul {
   padding: 0;
