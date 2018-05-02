@@ -1,8 +1,9 @@
 body {
   background-color: rgb(235, 235, 235);
-  background: #108dc7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #ef8e38, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #ef8e38, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #536976;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #6500C0, #6500C0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8A00FF, #8A00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
   font-family: 'Open Sans', sans-serif;
   color: rgb(120, 120, 120);
@@ -14,7 +15,7 @@ body {
 /*------------------------------SIDEBAR ------------------------------*/
 #sidebar {
   position: fixed;
-  width: 200px;
+  width: 150px;
   left: 0;
   top: 0;
   bottom: 0;
@@ -79,7 +80,7 @@ li a:hover {
 }
 
 .box-white {
-  background-color: white;
+  background-color: #FAFAFA;
   margin: 15px;
   border-radius: 5px;
   padding: 20px 10px;
@@ -135,10 +136,25 @@ ul {
   text-decoration: none;
 }
 
+.btn-red {
+  background-color: rgb(218, 0, 0);
+  padding: 10px 25px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .btn-green:hover {
   text-decoration: none;
   background-color: rgba(0, 215, 155, 0.8);
 }
+
+.btn-red:hover {
+  text-decoration: none;
+  background-color: rgb(218, 0, 0, 0.8);
+}
+
 
 #cicle-profil-picture {
   height: 150px;
@@ -189,10 +205,6 @@ ul {
     margin-left: 50px;
   }
   #sidebar {
-    opacity: 0;
-    width: 0;
-  }
-  #sidebar a, #sidebar i {
     opacity: 0;
     width: 0;
   }
